@@ -115,9 +115,9 @@ const Navbar = () => {
               aria-label="Toggle dark mode"
             >
               {theme === "dark" ? (
-                <Sun size={18} className="text-yellow-400 fill-yellow-400" />
-              ) : (
                 <Moon size={18} className="text-[#3b8ea0] fill-[#3b8ea0]/10" />
+              ) : (
+                <Sun size={18} className="text-yellow-400 fill-yellow-400" />
               )}
             </motion.button>
 
@@ -211,13 +211,13 @@ const Navbar = () => {
                 >
                   {theme === "dark" ? (
                     <>
-                      <Sun size={16} className="text-yellow-400 fill-yellow-400" />
-                      <span className="text-xs text-yellow-400 font-semibold uppercase tracking-wider">Light</span>
+                      <Moon size={16} className="text-[#3b8ea0] fill-[#3b8ea0]/10" />
+                      <span className="text-xs text-[#3b8ea0] font-semibold uppercase tracking-wider">Dark</span>
                     </>
                   ) : (
                     <>
-                      <Moon size={16} className="text-[#3b8ea0] fill-[#3b8ea0]/10" />
-                      <span className="text-xs text-[#3b8ea0] font-semibold uppercase tracking-wider">Dark</span>
+                      <Sun size={16} className="text-yellow-400 fill-yellow-400" />
+                      <span className="text-xs text-yellow-400 font-semibold uppercase tracking-wider">Light</span>
                     </>
                   )}
                 </motion.button>
